@@ -6,6 +6,12 @@
 
 body {
   font-family: sans-serif;
+  background-color: #1C242D;
+  color: #A9CF54;
+}
+
+#header-wrapper{
+  text-shadow: 1px 1px 2px black;
 }
 
 /* ---- button ---- */
@@ -86,8 +92,8 @@ body {
   height: 200px;
   margin: 5px;
   padding: 10px;
-  background: #888;
-  color: #262524;
+  background: #242F39;
+  color: #A9CF54;
 }
 
 .hero-item > * {
@@ -106,10 +112,11 @@ body {
 }
 
 
-.hero-item .winrate {
+.hero-item .winrate-wrapper {
   position: absolute;
-  right: 8px;
-  top: 5px;
+  right: 5px;
+  top: 40px;
+  font-size: 10px;
 }
 
 .hero-item .attribute {

@@ -8,8 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1>Isotope - filtering &amp; sorting</h1>
-	<h2>Filter</h2>
+	<div id='header-wrapper'>
+		<h1>Team OG Heroes</h1>
+		<h2>Filter</h2>
+	</div>
 	<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
 	  <button class="button" data-filter=".support">support</button>
 	  <button class="button" data-filter=".initiator">initiator</button>
@@ -32,7 +34,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Earth Shaker</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.889</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.889</span></p>
 		</div>
 	  </div>
 	  <div id='brew-master' class="hero-item carry initiator durable disabler nuker" data-category="melee">
@@ -42,7 +44,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Brew Master</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.778</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.778</span></p>
 		</div>
 	  </div>
 	  <div id='meepo' class="hero-item carry escape nuker disabler initiator pusher" data-category="melee">
@@ -52,7 +54,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Meepo</h3>
 		    <p class="attribute">Agility</p>
-		    <p class="winrate">0.750</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.750</span></p>
 		</div>
 	  </div>
 	  <div id='shadow-fiend' class="hero-item carry nuker" data-category="ranged">
@@ -62,7 +64,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Shadow Fiend</h3>
 		    <p class="attribute">Agility</p>
-		    <p class="winrate">0.727</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.727</span></p>
 		</div>
 	  </div>
 	  <div id='winter-wyvern' class="hero-item support disabler nuker" data-category="melee">
@@ -72,7 +74,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Winter Wyvern</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.789</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.789</span></p>
 		</div>
 	  </div>
 	  <div id='undying' class="hero-item support durable disabler nuker" data-category="melee">
@@ -82,7 +84,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Undying</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.826</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.826</span></p>
 		</div>
 	  </div>
 	  <div id='dazzle' class="hero-item support nuker disabler" data-category="ranged">
@@ -92,7 +94,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Dazzle</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.781</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.781</span></p>
 		</div>
 	  </div>
 	  <div id='jakiro' class="hero-item support nuker pusher disabler" data-category="ranged">
@@ -102,7 +104,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Jakiro</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.789</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.789</span></p>
 		</div>
 	  </div>
 	  <div id='tusk' class="hero-item initiator disabler nuker" data-category="melee">
@@ -112,7 +114,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Tusk</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.632</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.632</span></p>
 		</div>
 	  </div>
 	  <div id='gyrocopter' class="hero-item carry nuker disabler" data-category="ranged">
@@ -122,7 +124,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Gyrocoper</h3>
 		    <p class="attribute">Agility</p>
-		    <p class="winrate">0.789</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.789</span></p>
 		</div>
 	  </div>
 	  <div id='beastmaster' class="hero-item initiator disabler durable nuker" data-category="melee">
@@ -132,7 +134,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Beastmaster</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.842</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.842</span></p>
 		</div>
 	  </div>
 	  <div id='slardar' class="hero-item carry durable initiator disabler escape" data-category="melee">
@@ -142,7 +144,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Slardar</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.842</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.842</span></p>
 		</div>
 	  </div>
 	  <div id='dark-seer' class="hero-item initiator jungler escape disabler" data-category="melee">
@@ -152,7 +154,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Dark Seer</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.688</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.688</span></p>
 		</div>
 	  </div>
 	  <div id='io' class="hero-item support escape nuker" data-category="ranged">
@@ -162,7 +164,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Io</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.769</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.769</span></p>
 		</div>
 	  </div>
 	  <div id='lich' class="hero-item support nuker" data-category="ranged">
@@ -172,7 +174,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Lich</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.917</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.917</span></p>
 		</div>
 	  </div>
 	  <div id='doom' class="hero-item carry disabler initiator durable nuker" data-category="melee">
@@ -182,7 +184,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Doom</h3>
 		    <p class="attribute">Strength</p>
-		    <p class="winrate">0.727</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.727</span></p>
 		</div>
 	  </div>
 	  <div id='natures-prophet' class="hero-item carry jungler pusher escape nuker" data-category="ranged">
@@ -192,7 +194,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Natures Prophet</h3>
 		    <p class="attribute">Intelligence</p>
-		    <p class="winrate">0.818</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.818</span></p>
 		</div>
 	  </div>
 	  <div id='anti-mage' class="hero-item carry escape nuker" data-category="melee">
@@ -202,7 +204,7 @@
 	  	<div class='data-wrapper'>
 		    <h3 class="name">Anti Mage</h3>
 		    <p class="attribute">Agility</p>
-		    <p class="winrate">0.800</p>
+		    <p class='winrate-wrapper'>Winrate: <span class="winrate">0.800</span></p>
 		</div>
 	  </div>
 	</div>
