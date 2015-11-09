@@ -1,35 +1,30 @@
 // external js: isotope.pkgd.js
 
 $( document ).ready( function() {
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
-    }
-  });
+    // init Isotope
+    var $container = $('.isotope').isotope({
+        itemSelector: '.hero-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+            name: '.name',
+            attribute: '.attribute',
+            winrate: '.winrate'
+        }
+    });
 
   // filter functions
-  var filterFns = {
+    var filterFns = {
     // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
+        winrateGreaterThan80: function() {
+            var number = $(this).find('.winrate').text();
+            return ( number > .8);
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+        }
+    };
 
   // bind filter button click
   $('#filters').on( 'click', 'button', function() {
