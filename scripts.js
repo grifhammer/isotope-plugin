@@ -9,6 +9,11 @@ $( document ).ready( function() {
             name: '.name',
             attribute: '.attribute',
             winrate: '.winrate'
+        },
+        sortAscending: {
+          name: true,
+          attribute: true,
+          winrate: false
         }
     });
 
